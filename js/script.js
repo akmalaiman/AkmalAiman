@@ -71,12 +71,20 @@ function toggleAccordion(element) {
         const allHeaders = document.querySelectorAll('.portfolio-accordion-header');
 
         allContents.forEach((content, index) => {
+
+                const iElement = allHeaders[index].querySelector('i');
+
                 if (allHeaders[index] === element) {
-                        content.style.display = content.style.display === 'block' ? 'none' : 'block';
-                        allHeaders[index].classList.toggle('active');
+                        const isOpen = content.style.display === 'block';
+                        content.style.display = isOpen ? 'none' : 'block';
+                        allHeaders[index].classList.toggle('active', !isOpen);
+                        iElement.classList.toggle('bx-chevrons-down', isOpen);
+                        iElement.classList.toggle('bx-chevrons-up', !isOpen);
                 } else {
                         content.style.display = 'none';
                         allHeaders[index].classList.remove('active');
+                        iElement.classList.remove('bx-chevrons-up');
+                        iElement.classList.add('bx-chevrons-down');
                 }
         });
 }
