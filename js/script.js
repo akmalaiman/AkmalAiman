@@ -55,12 +55,28 @@ window.onscroll = () => {
 //Scroll Reveal
 ScrollReveal({
         reset: true,
-        distance: '80px',
+        distance: '200px',
         duration: 2000,
         delay: 200
 });
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
-ScrollReveal().reveal('.home-img, .portfolio-box, .contact-form, .journey-box, .journey-content', { origin: 'bottom' });
+ScrollReveal().reveal('.home-img, .portfolio-box, .contact form, .journey-box, .journey-content, .portfolio-accordion', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img, .journey-column .title', { origin: 'left' });
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+
+//Portfolio Accordion
+function toggleAccordion(element) {
+        const allContents = document.querySelectorAll('.portfolio-accordion-content');
+        const allHeaders = document.querySelectorAll('.portfolio-accordion-header');
+
+        allContents.forEach((content, index) => {
+                if (allHeaders[index] === element) {
+                        content.style.display = content.style.display === 'block' ? 'none' : 'block';
+                        allHeaders[index].classList.toggle('active');
+                } else {
+                        content.style.display = 'none';
+                        allHeaders[index].classList.remove('active');
+                }
+        });
+}

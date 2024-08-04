@@ -284,11 +284,66 @@ span {
 
 .journey-content .content ul li {
         margin-bottom: 0.8rem;
-        /*text-align: justify;*/
 }
 
 .portfolio {
         background: var(--secondary-bg-color);
+}
+
+.portfolio h2 {
+        margin-bottom: 3rem;
+}
+
+.portfolio-accordion {
+        background: var(--tertiary-bg-color);
+        border-radius: .5rem;
+        box-shadow: 0 0 1rem var(--main-color);
+}
+
+.portfolio-accordion-item {
+        border-bottom: .1rem solid var(--main-color);
+}
+
+.portfolio-accordion-item:nth-last-child {
+        border-bottom: none;
+}
+
+.portfolio-accordion-header {
+        padding: 1.5rem;
+        cursor: pointer;
+        background: var(--secondary-bg-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: background-color .5s ease;
+}
+
+.portfolio-accordion-header:hover {
+        background-color: var(--primary-bg-color);
+}
+
+.portfolio-accordion-header.active {
+        background-color: var(--primary-bg-color);
+}
+
+.portfolio-accordion-header h3 {
+        font-size: 2rem;
+        margin: 0;
+}
+
+.portfolio-accordion-header i {
+        font-size: 2.5rem;
+}
+
+.portfolio-accordion-content {
+        display: none;
+        padding: 1.5rem;
+        background: var(--tertiary-bg-color);
+}
+
+.portfolio-accordion-content p {
+        font-size: 1.6rem;
+        margin: 0;
 }
 
 .contact h2 {
@@ -381,6 +436,15 @@ span {
                 padding: 10rem 3% 2rem;
         }
 
+        .home {
+                padding-bottom: 0;
+        }
+
+        .about {
+                padding-bottom: 0;
+                align-items: end;
+        }
+
         .journey {
                 padding-bottom: 7rem;
         }
@@ -427,6 +491,7 @@ span {
 
         .home {
                 flex-direction: column;
+                padding-bottom: 0;
         }
 
         .home-content h3 {
@@ -444,6 +509,7 @@ span {
 
         .about {
                 flex-direction: column-reverse;
+                padding-bottom: 0;
         }
 
         .about-img img {
