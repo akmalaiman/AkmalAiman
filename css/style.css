@@ -277,6 +277,16 @@ span {
         padding-top: 1.5rem;
 }
 
+.journey-content .content ul {
+        padding: 1.5rem 0 0 2rem;
+        font-size: 1.6rem;
+}
+
+.journey-content .content ul li {
+        margin-bottom: 0.8rem;
+        /*text-align: justify;*/
+}
+
 .portfolio {
         background: var(--secondary-bg-color);
 }

@@ -63,4 +63,4 @@ ScrollReveal({
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .portfolio-box, .contact-form, .journey-box, .journey-content', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img, .journey-column .title', { origin: 'left' });
-ScrollReveal().reveal('.home-content p, .about-content,', { origin: 'right' });
+ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
