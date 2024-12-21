@@ -16,8 +16,9 @@ every project I undertake. Creating meaningful and seamless experiences is what 
 
 # 📊 GitHub Stats:
 
-![](https://github-readme-stats.vercel.app/api?username=akmalaiman&theme=gruvbox&hide_border=false&include_all_commits=true&count_private=true)<br/>
+[//]: # (![]&#40;https://github-readme-stats.vercel.app/api?username=akmalaiman&theme=gruvbox&hide_border=false&include_all_commits=true&count_private=true&#41;<br/>)
 ![](https://github-readme-streak-stats.herokuapp.com/?user=akmalaiman&theme=gruvbox&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=akmalaiman&theme=gruvbox&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+
+[//]: # (![]&#40;https://github-readme-stats.vercel.app/api/top-langs/?username=akmalaiman&theme=gruvbox&hide_border=false&include_all_commits=true&count_private=true&layout=compact&#41;)
 
 <!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
